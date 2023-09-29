@@ -25,8 +25,7 @@
   },
   "scripts": {
     "post-autoload-dump": [
-      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
-      "@php artisan package:discover --ansi"
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump"
     ]
   },
   "config": {
@@ -35,7 +34,6 @@
     "sort-packages": true,
     "allow-plugins": {}
   },
-  "minimum-stability": "stable",
-  
+  "minimum-stability": "dev",
   "prefer-stable": true
 }
