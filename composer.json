@@ -5,7 +5,7 @@
 		"psr-4": {
 			"NopphasinAra\\HelloWorldPackage\\": "src/"
 		}
-	}
+	},
 	"minimum-stability": "dev",
 	"prefer-stable": true
 }
