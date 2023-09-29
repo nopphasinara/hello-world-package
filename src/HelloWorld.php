@@ -1,6 +1,6 @@
 <?php
 
-namespace HelloWorldPackage;
+namespace NopphasinAra\HelloWorldPackage;
 
 class HelloWorld
 {
