@@ -1,22 +1,41 @@
 {
-	"name": "nopphasinara/hello-world-package",
-	"description": "A hello world composer private package.",
-	"license": "MIT",
-	"authors": [
-		{
-			"name": "Nopphasin Arayasirikul@gmail.com",
-			"email": "nopphasin.arayasirikul@gmail.com",
-			"homepage": "https://github.com/nopphasinara/"
-		}
-	],
-	"require": {
-		"php": ">=8.0.0"
-	},
-	"autoload": {
-		"psr-4": {
-			"NopphasinAra\\HelloWorldPackage\\": "src/"
-		}
-	},
-	"minimum-stability": "dev",
-	"prefer-stable": true
+  "name": "nopphasinara/hello-world-package",
+  "description": "A hello world composer private package.",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nopphasin Arayasirikul@gmail.com",
+      "email": "nopphasin.arayasirikul@gmail.com",
+      "homepage": "https://github.com/nopphasinara/"
+    }
+  ],
+  "require": {
+    "php": "^8.0.0"
+  },
+  "require-dev": {},
+  "autoload": {
+    "psr-4": {
+      "NopphasinAra\\HelloWorldPackage\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "scripts": {
+    "post-autoload-dump": [
+      "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+      "@php artisan package:discover --ansi"
+    ]
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "allow-plugins": {}
+  },
+  "minimum-stability": "stable",
+  
+  "prefer-stable": true
 }
