@@ -4,7 +4,7 @@ namespace HelloWorldPackage;
 
 class HelloWorld
 {
-    public static function __construct() {
+    public function __construct() {
       echo __CLASS__;
     }
 
